@@ -8,11 +8,10 @@ const Trainer = () => {
           className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              Discover Our Team
+              Discover Our Expert Trainer Team
             </p>
             <p className="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, aperiam?
             </p>
           </div>
           <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
@@ -20,13 +19,12 @@ const Trainer = () => {
               <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                 <img
                   className="absolute object-cover w-full h-full rounded"
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                  alt="Person"
+                  src="https://res.cloudinary.com/dhc1xdswn/image/upload/v1700944778/fpdl.in__handsome-model-young-man-workout-gym_174475-1512_normal_z1bei6.jpg"
                 />
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Oliver Aguilerra</p>
-                <p className="mb-5 text-xs text-gray-800">Product Manager</p>
+                <p className="mb-5 text-xs text-gray-800">Expert Trainer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="/"
@@ -55,13 +53,12 @@ const Trainer = () => {
               <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                 <img
                   className="absolute object-cover w-full h-full rounded"
-                  src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                  alt="Person"
+                  src="https://res.cloudinary.com/dhc1xdswn/image/upload/v1700946133/medium-shot-smiley-woman_pq34al.jpg"
                 />
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Marta Clermont</p>
-                <p className="mb-5 text-xs text-gray-800">Design Team Lead</p>
+                <p className="mb-5 text-xs text-gray-800">BEst Women Trainer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="/"
@@ -90,13 +87,12 @@ const Trainer = () => {
               <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                 <img
                   className="absolute object-cover w-full h-full rounded"
-                  src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                  alt="Person"
+                  src="https://res.cloudinary.com/dhc1xdswn/image/upload/v1700944776/fpdl.in__portrait-personal-trainer-sports-outfit-fitness-center-gym-standing-strong_600776-828_normal_dnxeod.jpg"
                 />
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">Alice Melbourne</p>
-                <p className="mb-5 text-xs text-gray-800">Human Resources</p>
+                <p className="mb-5 text-xs text-gray-800">Lead Trainer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="/"
@@ -125,13 +121,12 @@ const Trainer = () => {
               <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
                 <img
                   className="absolute object-cover w-full h-full rounded"
-                  src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                  alt="Person"
+                  src="https://res.cloudinary.com/dhc1xdswn/image/upload/v1700944776/fpdl.in__handsome-man-posing-black-tshirt_600776-34705_normal_d1gyxs.jpg"
                 />
               </div>
               <div className="flex flex-col sm:text-center">
                 <p className="text-lg font-bold">John Doe</p>
-                <p className="mb-5 text-xs text-gray-800">Good guy</p>
+                <p className="mb-5 text-xs text-gray-800">Expert Trainer</p>
                 <div className="flex items-center space-x-3 sm:justify-center">
                   <a
                     href="/"

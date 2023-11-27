@@ -8,7 +8,7 @@ import { Autoplay, Pagination, Navigation,Grid } from "swiper/modules";
 const Second = () => {
   return (
     <div id="Service">
-      <div className="text-4xl ">OUR SERVICE</div>
+      <div className="text-4xl  ml-[500px]">OUR SERVICE</div>
       <div className="grid grid-cols-4 ">
         <div className="card rounded-none min-w-fit bg-orange-100 text-black ">
           <div className="card-body items-center text-center">
@@ -81,8 +81,9 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">Nutrition Strategies</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  Nutritionists evaluate individuals' dietary habits, health
+                  goals, and medical history to create personalized nutrition
+                  plans.
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>
@@ -101,8 +102,8 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">Workout Routines</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  A workout routine is a structured and purposeful plan of
+                  physical exercises designed to enhance overall fitness.
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>
@@ -121,8 +122,8 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">First Hand Advice</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  Prioritize sleep: Ensure you get enough quality sleep to
+                  support overall health and cognitive function.
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>
@@ -141,8 +142,8 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">Support Motivation</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  Clearly define your goals, making them specific, measurable,
+                  achievable, relevant, and time-bound (SMART).
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>
@@ -162,8 +163,9 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">Certified Company</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  The International Organization for Standardization (ISO)
+                  provides certifications such as ISO 9001 for quality
+                  management.
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>
@@ -179,8 +181,8 @@ const Second = () => {
               <div className="card-body">
                 <h2 className="card-title">Strong Community</h2>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries.
+                  A cohesive community often shares common values and goals.
+                  This could include a commitment to safety.
                 </p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Learn More</button>

@@ -13,6 +13,10 @@ import PrivateRoute from './Components/PrivateROute/PrivateRoute';
 import Diet from './Components/Customers/Diet/Diet';
 import WorkOut from './Components/Customers/WorkOut/WorkOut';
 import Overview from './Components/Customers/Overview/Overview';
+import Blog from './Components/Customers/Blog/Blog';
+import ExerciseList from './Components/Customers/ExerciseList/ExerciseList';
+import Report from './Components/Customers/Report/Report';
+import FoodList from './Components/Customers/FoodList/FoodList';
 
 
 
@@ -51,7 +55,27 @@ const router = createBrowserRouter([
       },
       {
         path: "/Classes/Overview",
-        element:<Overview></Overview>
+        element: <Overview></Overview>,
+      },
+      {
+        path: "/Classes/Blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/Classes/ExerciseList",
+        element: <ExerciseList></ExerciseList>,
+      },
+      {
+        path: "/Classes/Report",
+        element: <Report></Report>,
+      },
+      {
+        path: "/Classes/Exercise",
+        element: <ExerciseList></ExerciseList>,
+      },
+      {
+        path: "/Classes/Food",
+        element: <FoodList></FoodList>,
       },
     ],
   },

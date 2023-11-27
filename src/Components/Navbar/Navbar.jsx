@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar absolute top-0 left-0 p-0 ">
-        <div className="fixed bg-orange-500 h-16  ">
+        <div className="fixed bg-gray-500 h-16  ">
           <div className="navbar-start w-full   ">
             <HashLink className="ml-5 text-2xl  font-extrabold text-orange-200  ">
               FitBangladesh
@@ -65,27 +65,31 @@ const Navbar = () => {
           </div>
         </div>
         <div className=" ml-5 absolute text-orange-200 mt-72 font-extrabold  text-4xl	">
-          {/* <Typewriter
-            options={{
-              strings: ["Hello welcome to fit bangladesh", "World"],
-              autoStart: true,
-              loop: true,
-            }}
-          /> */}
-
           <span>
             THE ONLY IMPOSSIBLE JOURNEY
-            <br /> IS THE ONE YOU NEVER BEGIN.
+            <br /> IS THE ONE YOU NEVER BEGIN
+            <div className="mt-[30px]">
+              <span className="text-xl text-orange-500">
+                <Typewriter
+                  options={{
+                    strings: ["Transform your body, transcend your limits."],
+
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            </div>
           </span>
           <br />
-          <span className="font-normal text-xs  absolute mt-[200px] ">
+          <span className="font-normal text-xs  absolute mt-[350px] ">
             It doesn’t matter if your goal is to get stronger, burn fat, or to
             just stay fit our world class coaches will guide you every step of
             the way
           </span>
           <br />
         </div>
-        <button className="ml-5 btn bg-yellow-200 absolute  text-black border mt-[700px]">
+        <button className="ml-5 btn bg-yellow-200 absolute  text-black border mt-[900px]">
           BEGIN YOUR JOURNEY
         </button>
       </div>
