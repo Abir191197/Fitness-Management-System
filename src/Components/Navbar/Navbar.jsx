@@ -9,6 +9,8 @@ import Trainer from "../Trainer/Trainer";
 
 import Nutritionist from "../Nutritionist/Nutritionist";
 import About from "../About/About";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -23,14 +25,14 @@ const Navbar = () => {
       </div>
 
       <div className="navbar absolute top-0 left-0 p-0 ">
-        <div className="fixed bg-gray-500 h-16  ">
+        <div className="fixed bg-gray-500 h-16 w-full  ">
           <div className="navbar-start w-full   ">
             <HashLink className="ml-5 text-2xl  font-extrabold text-orange-200  ">
               FitBangladesh
             </HashLink>
           </div>
-          <div className=" navbar-center hidden lg:flex  ">
-            <ul className=" menu-horizontal px-1 space-x-7 text-bold  text-orange-200 ml-52 ">
+          <div className=" navbar-center hidden lg:flex w-full  ">
+            <ul className=" menu-horizontal px-1 space-x-7 text-bold  text-orange-200 ml-52  ">
               <li>
                 <HashLink smooth to="#home" className=" font-bold">
                   Home
@@ -57,10 +59,29 @@ const Navbar = () => {
                 </HashLink>
               </li>
             </ul>
-            <div className=" ">
-              <HashLink className="font-extrabold text-white ml-56 p-28 ">
-                Log In
-              </HashLink>
+            <div>
+              <div className="dropdown dropdown-end ml-52 ">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="  font-extrabold text-orange-200   ">
+                  Log In
+                </div>
+                <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <Link to='/Admin'>Admin</Link>
+                  </li>
+                  <li>
+                    
+                  </li>
+                  <li>
+                    <Link>nutritionist</Link>
+                  </li>
+                  <li>
+                    <Link>User</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -97,6 +118,7 @@ const Navbar = () => {
       <Trainer></Trainer>
       <Nutritionist></Nutritionist>
       <About></About>
+   
     </>
   );
 };
