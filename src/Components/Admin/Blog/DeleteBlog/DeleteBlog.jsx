@@ -12,12 +12,6 @@ const DeleteBlog = () => {
 
 
 
-
-
-
-
-
-
   
  const [blogs, setBlogs] = useState([]);
  useEffect(() => {

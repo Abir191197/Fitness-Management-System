@@ -135,10 +135,12 @@ const Nav = () => {
                       </svg>
                     </span>
                     <span class="ml-2 text-sm tracking-wide truncate">
-                      Notifications
+                      <Link to="/classes/Nutrition Analysis">
+                        Nutrition Analysis
+                      </Link>
                     </span>
                     <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
-                      1.2k
+                      1
                     </span>
                   </a>
                 </li>

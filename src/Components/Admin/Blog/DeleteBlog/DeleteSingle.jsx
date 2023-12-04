@@ -2,7 +2,7 @@ import React from 'react';
 import Swal from "sweetalert2";
 
 const DeleteSingle = ({ blog}) => {
-    const {_id, Title, category1 } = blog;
+    const {_id,Title, category1 } = blog;
     
     const HandleDelete = _id => {
        Swal.fire({
@@ -55,7 +55,7 @@ const DeleteSingle = ({ blog}) => {
   return (
     <>
       <tr>
-        <td>{}</td>
+        <td>{_id}</td>
         <td>{Title}</td>
         <td>{category1}</td>
 

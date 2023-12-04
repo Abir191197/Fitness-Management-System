@@ -20,6 +20,11 @@ import FoodList from './Components/Customers/FoodList/FoodList';
 import Admin from './Components/Root/Admin';
 import AddBlog from './Components/Admin/AddBlog/AddBlog';
 import DeleteBlog from './Components/Admin/Blog/DeleteBlog/DeleteBlog';
+import NutritionAnalysis from './Components/Customers/Nutrition Analysis/NutritionAnalysis';
+import Root_Nutritionist from "./Components/Nutritionist_Panel/Root_Nutritionist";
+import Guideline from './Components/Nutritionist_Panel/Guideline/Guideline';
+import SingleGuideline from './Components/Nutritionist_Panel/Guideline/SingleGuideline';
+import SingleUserGuideline from './Components/Nutritionist_Panel/SingleUserGuideline/SingleUserGuideline';
 
 
 
@@ -80,6 +85,10 @@ const router = createBrowserRouter([
         path: "/Classes/Food",
         element: <FoodList></FoodList>,
       },
+      {
+        path: "/Classes/Nutrition Analysis",
+        element: <NutritionAnalysis></NutritionAnalysis>,
+      },
     ],
   },
 
@@ -93,7 +102,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/Admin/DeleteBlog",
-        element:<DeleteBlog></DeleteBlog>
+        element: <DeleteBlog></DeleteBlog>,
+      },
+    ],
+  },
+
+  {
+    path: "Nutritionist_Panel",
+    element: <Root_Nutritionist></Root_Nutritionist>,
+    children: [
+      {
+        path: "/Nutritionist_Panel/GuideLine",
+        element: <Guideline></Guideline>,
+      },
+
+      {
+        path: "/Nutritionist_Panel/SingleUserGuideline",
+        element: <SingleUserGuideline></SingleUserGuideline>,
       },
     ],
   },

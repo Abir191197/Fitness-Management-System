@@ -8,7 +8,7 @@ const AddBlog = () => {
       event.preventDefault();
 
       const form = event.target;
-      const Title = form.title.value;
+      const Title = form.Title.value;
       const img = form.img.value;
       const Body = form.Body.value;
       const category1 = form.category1.value;

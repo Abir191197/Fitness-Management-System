@@ -4,7 +4,7 @@ import { Chart } from "react-google-charts";
 
 const data = [
   ["Task", "Hours per Day"],
-  ["January", 110],
+  ["January", 100],
   ["February", 200],
   ["March", 50],
   ["April", 20],

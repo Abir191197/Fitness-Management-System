@@ -69,13 +69,11 @@ const Navbar = () => {
                 </div>
                 <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li>
-                    <Link to='/Admin'>Admin</Link>
+                    <Link to="/Admin">Admin</Link>
                   </li>
+                  <li></li>
                   <li>
-                    
-                  </li>
-                  <li>
-                    <Link>nutritionist</Link>
+                    <Link to="/Nutritionist_Panel">Nutritionist</Link>
                   </li>
                   <li>
                     <Link>User</Link>
@@ -118,7 +116,6 @@ const Navbar = () => {
       <Trainer></Trainer>
       <Nutritionist></Nutritionist>
       <About></About>
-   
     </>
   );
 };

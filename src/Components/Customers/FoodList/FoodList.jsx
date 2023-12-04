@@ -1,85 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Swal from "sweetalert2";
-
-
-
 
 const FoodList = () => {
 
 
-const [cals, setCal] = useState([]);
+  const HandleFoodList = (event) => {
+    event.preventDefault();
 
+    const form = event.target;
+    const breakfast = form.BreakFast.value;
+    const lunch = form.lunch.value;
+    const evening = form.Evening.value;
+    const dinner = form.Dinner.value;
+    const food = { breakfast, lunch, evening, dinner };
 
+    console.log(food);
 
+    fetch("http://localhost:5000/FoodList", {
+      method: "POST",
 
-
-
-   
-   
-
-   
-
-  
-
-    const HandleFoodList = event => {
-        event.preventDefault();
-
-        const form = event.target;
-      const breakfast = form.BreakFast.value;
-        const lunch = form.lunch.value;
-        const evening = form.Evening.value;
-      const dinner = form.Dinner.value;
-      const food = { breakfast, lunch, evening, dinner };
-        
-   
-      
-
-     
-
-        fetch("http://localhost:5000/FoodList", {
-          method: "POST",
-
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(food),
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-             if (data.insertedId) {
-               Swal.fire({
-                 title: "Good job!",
-                 text: "Submit the form",
-                 icon: "success",
-               });
-           }
-            form.reset();
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(food),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Good job!",
+            text: "Submit the form",
+            icon: "success",
           });
-        
-       
-
-       
-
-}
-
-
-
-
-  
-
-
-
-
-
-
-
+        }
+        form.reset();
+      });
+  };
 
   return (
-    <div>
+    <div className="mt-32   ">
       <form onSubmit={HandleFoodList}>
-        <div className="ml-56">
-          <div className="ml-56">
+        <div className="ml-72 ">
+          <div className="ml-72 ">
             <div class="flex w-80 flex-col gap-6 mt-4">
               <div class="relative h-10 w-full min-w-[200px]">
                 <input
@@ -130,7 +93,6 @@ const [cals, setCal] = useState([]);
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
                 Submit
               </button>
-              <li>{cals}</li>
             </div>
           </div>
         </div>
