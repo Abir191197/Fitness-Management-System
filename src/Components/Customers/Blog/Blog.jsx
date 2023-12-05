@@ -9,6 +9,8 @@ const Blog = () => {
        fetch(`http://localhost:5000/Blog`)
          .then((res) => res.json())
          .then((data) => setBlogs(data));
+       
+      
      }, []);
 
     return (

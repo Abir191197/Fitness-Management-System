@@ -25,6 +25,8 @@ import Root_Nutritionist from "./Components/Nutritionist_Panel/Root_Nutritionist
 import Guideline from './Components/Nutritionist_Panel/Guideline/Guideline';
 import SingleGuideline from './Components/Nutritionist_Panel/Guideline/SingleGuideline';
 import SingleUserGuideline from './Components/Nutritionist_Panel/SingleUserGuideline/SingleUserGuideline';
+import Inbox from './Components/Customers/Inbox/Inbox';
+import UpdateBlog from './Components/Admin/Blog/UpdateBlog/UpdateBlog';
 
 
 
@@ -89,6 +91,10 @@ const router = createBrowserRouter([
         path: "/Classes/Nutrition Analysis",
         element: <NutritionAnalysis></NutritionAnalysis>,
       },
+      {
+        path: "/Classes/Inbox",
+        element: <Inbox></Inbox>,
+      },
     ],
   },
 
@@ -103,6 +109,11 @@ const router = createBrowserRouter([
       {
         path: "/Admin/DeleteBlog",
         element: <DeleteBlog></DeleteBlog>,
+      },
+      {
+        path: "/Admin/UpdateBlog/:id",
+        element: <UpdateBlog></UpdateBlog>,
+        loader: ({ params }) => fetch(`http://localhost:5000/Blog/${params.id}`),
       },
     ],
   },

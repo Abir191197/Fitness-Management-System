@@ -8,8 +8,9 @@ const SingleUserGuideline = () => {
         event.preventDefault();
         const form = event.target;
         const Body = form.body.value;
+        const email = `ardhrubo908@gmail.com`;
 
-        const Bodydata ={Body}
+        const Bodydata = { Body, email };
 
         console.log(Body);
         fetch("http://localhost:5000/Guideline_from_Nutritionist", {

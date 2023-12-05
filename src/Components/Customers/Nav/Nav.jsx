@@ -86,7 +86,7 @@ const Nav = () => {
                       </svg>
                     </span>
                     <span class="ml-2 text-sm tracking-wide truncate">
-                      Inbox
+                      <Link to="/Classes/Inbox">Inbox</Link>
                     </span>
                     <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-indigo-500 bg-indigo-50 rounded-full">
                       New

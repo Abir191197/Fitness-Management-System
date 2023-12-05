@@ -12,9 +12,10 @@ const AddBlog = () => {
       const img = form.img.value;
       const Body = form.Body.value;
       const category1 = form.category1.value;
-       const category2 = form.category2.value;
+      const category2 = form.category2.value;
+      const Type = form.Type.value;
 
-      const BlogData = { Title, img, category1, Body, category2 };
+      const BlogData = { Title, img, category1, Body, category2, Type };
       console.log(BlogData);
     
     
