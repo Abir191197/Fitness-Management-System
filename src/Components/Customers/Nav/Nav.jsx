@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css'
+import { AuthContext } from '../../../Providers/AuthProvider';
+
 const Nav = () => {
+  
     return (
-      <div >
-       
+      <div>
         <div className=" absolute min-h-screen   flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-00 text-gray-800">
           <div className="fixed flex flex-col top-0 left-0 w-64 bg-white h-full border-r">
             <div className="flex items-center justify-center h-14 border-b">
-              <div>Welcome Customer</div>
+              <div>Welcome Customer </div>
             </div>
             <div className="overflow-y-auto overflow-x-hidden flex-grow">
               <ul className="flex flex-col py-4 space-y-1">

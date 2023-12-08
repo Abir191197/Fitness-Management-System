@@ -60,9 +60,7 @@ const Navbar = () => {
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/Login">
-                  Login
-                </HashLink>
+              
               </li>
             </ul>
             <div>
@@ -82,7 +80,7 @@ const Navbar = () => {
                     <Link to="/Nutritionist_Panel">Nutritionist</Link>
                   </li>
                   <li>
-                    <Link>Trainer</Link>
+                    <Link to='/Trainer'>Trainer</Link>
                   </li>
                 </ul>
               </div>

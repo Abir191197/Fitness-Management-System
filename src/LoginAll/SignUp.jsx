@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Lottie from "lottie-react";
 import animation from "../assets/6716094.json";
 import { Link } from "react-router-dom";
+import { AuthContext } from '../Providers/AuthProvider';
 
 const SignUp = () => {
 
+
+    const { createUser } = useContext(AuthContext);
+
     const HandleSignUp = (event) => {
+
+        
+
+
 
        event.preventDefault();
         const form = event.target;
@@ -17,8 +25,16 @@ const SignUp = () => {
         const signUp = { userName, email, password, img }
         
         console.log(signUp);
-    
 
+
+        createUser(email, password)
+          .then((result) => {
+            const user = result.user;
+            console.log(user);
+          })
+            .catch((error) => console.log(error));
+        event.target.reset();
+    
 }
 
 

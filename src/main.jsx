@@ -29,6 +29,8 @@ import Inbox from './Components/Customers/Inbox/Inbox';
 import UpdateBlog from './Components/Admin/Blog/UpdateBlog/UpdateBlog';
 import Login from './LoginAll/Login';
 import SignUp from './LoginAll/SignUp';
+import AuthProvider from './Providers/AuthProvider';
+import PrivateRoute from './Providers/PrivateRoute';
 
 
 
@@ -57,6 +59,7 @@ const router = createBrowserRouter([
     path: "/Login",
     element: <Login></Login>,
   },
+
   {
     path: "/SignUp",
     element: <SignUp></SignUp>,
@@ -76,7 +79,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/Classes/Overview",
-        element: <Overview></Overview>,
+        element: (
+          <PrivateRoute>
+            <Overview></Overview>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/Classes/Blog",
@@ -149,6 +156,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
