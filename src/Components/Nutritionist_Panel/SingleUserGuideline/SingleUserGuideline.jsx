@@ -27,7 +27,7 @@ const SingleUserGuideline = () => {
             if (data.insertedId) {
               Swal.fire({
                 title: "Good job!",
-                text: "Blog Added Successfully!!!",
+                text: "Guideline added Successfully!!!",
                 icon: "success",
               });
             }

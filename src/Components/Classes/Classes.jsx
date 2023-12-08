@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 
 const Classes = () => {
     return (
-        <div>
+        <div className=''>
             <Nav></Nav>
             
             <Outlet></Outlet>

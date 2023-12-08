@@ -12,6 +12,7 @@ import About from "../About/About";
 import { Link } from "react-router-dom";
 
 
+
 const Navbar = () => {
   return (
     <>
@@ -58,6 +59,11 @@ const Navbar = () => {
                   Classes
                 </HashLink>
               </li>
+              <li>
+                <HashLink smooth to="/Login">
+                  Login
+                </HashLink>
+              </li>
             </ul>
             <div>
               <div className="dropdown dropdown-end ml-52 ">
@@ -76,7 +82,7 @@ const Navbar = () => {
                     <Link to="/Nutritionist_Panel">Nutritionist</Link>
                   </li>
                   <li>
-                    <Link>User</Link>
+                    <Link>Trainer</Link>
                   </li>
                 </ul>
               </div>

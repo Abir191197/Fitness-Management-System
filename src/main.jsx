@@ -23,10 +23,13 @@ import DeleteBlog from './Components/Admin/Blog/DeleteBlog/DeleteBlog';
 import NutritionAnalysis from './Components/Customers/Nutrition Analysis/NutritionAnalysis';
 import Root_Nutritionist from "./Components/Nutritionist_Panel/Root_Nutritionist";
 import Guideline from './Components/Nutritionist_Panel/Guideline/Guideline';
-import SingleGuideline from './Components/Nutritionist_Panel/Guideline/SingleGuideline';
+
 import SingleUserGuideline from './Components/Nutritionist_Panel/SingleUserGuideline/SingleUserGuideline';
 import Inbox from './Components/Customers/Inbox/Inbox';
 import UpdateBlog from './Components/Admin/Blog/UpdateBlog/UpdateBlog';
+import Login from './LoginAll/Login';
+import SignUp from './LoginAll/SignUp';
+
 
 
 
@@ -49,6 +52,14 @@ const router = createBrowserRouter([
         element: <About></About>,
       },
     ],
+  },
+  {
+    path: "/Login",
+    element: <Login></Login>,
+  },
+  {
+    path: "/SignUp",
+    element: <SignUp></SignUp>,
   },
   {
     path: "/Classes",
@@ -113,7 +124,8 @@ const router = createBrowserRouter([
       {
         path: "/Admin/UpdateBlog/:id",
         element: <UpdateBlog></UpdateBlog>,
-        loader: ({ params }) => fetch(`http://localhost:5000/Blog/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/Blog/${params.id}`),
       },
     ],
   },
