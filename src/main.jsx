@@ -35,6 +35,7 @@ import Root_Trainer from './Components/Trainer_Panel/Root_Trainer';
 import Exericse_Data_Customers from './Components/Trainer_Panel/ExericseData_GET_From_Customer/Exericse_Data_Customers';
 import TestAPI from './Components/Trainer_Panel/TextAPI';
 import Trainer_SingleUserGuideline from './Components/Trainer_Panel/SingleUserGuideline/Trainer_SingleUserGuideline';
+import ExerciseListProvideTrainer from './Components/Customers/Inbox/ExerciseGuidellineTrainer/ExerciseListProvideTrainer';
 
 
 
@@ -117,6 +118,9 @@ const router = createBrowserRouter([
         path: "/Classes/Inbox",
         element: <Inbox></Inbox>,
       },
+      {
+        path: "/Classes/ExerciseListProvideTrainer",
+    element:<ExerciseListProvideTrainer></ExerciseListProvideTrainer>  },
     ],
   },
 
@@ -166,13 +170,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/Trainer/SingleGuideLine",
-        element:<Trainer_SingleUserGuideline></Trainer_SingleUserGuideline>
+        element: <Trainer_SingleUserGuideline></Trainer_SingleUserGuideline>,
       },
     ],
   },
   {
     path: "testAPi",
-    element:<TestAPI></TestAPI>
+    element: <TestAPI></TestAPI>,
   },
 ]);
 
