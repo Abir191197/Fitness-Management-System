@@ -162,7 +162,9 @@ const Nav = () => {
                       </svg>
                     </span>
                     <span className="ml-2 text-sm tracking-wide truncate">
-                      <Link to="">Exercise List/Video</Link>
+                      <Link to="/Classes/ExerciseVideo">
+                        Exercise List/Video
+                      </Link>
                     </span>
                     <span className="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-red-500 bg-red-50 rounded-full">
                       1

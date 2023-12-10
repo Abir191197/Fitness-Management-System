@@ -36,6 +36,7 @@ import Exericse_Data_Customers from './Components/Trainer_Panel/ExericseData_GET
 import TestAPI from './Components/Trainer_Panel/TextAPI';
 import Trainer_SingleUserGuideline from './Components/Trainer_Panel/SingleUserGuideline/Trainer_SingleUserGuideline';
 import ExerciseListProvideTrainer from './Components/Customers/Inbox/ExerciseGuidellineTrainer/ExerciseListProvideTrainer';
+import ExerciseVideoAPI from './Components/Trainer_Panel/ExericseData_GET_From_Customer/ExerciseVideoAPI';
 
 
 
@@ -121,6 +122,12 @@ const router = createBrowserRouter([
       {
         path: "/Classes/ExerciseListProvideTrainer",
     element:<ExerciseListProvideTrainer></ExerciseListProvideTrainer>  },
+
+      {
+        path: "/Classes/ExerciseVideo",
+        element:<ExerciseVideoAPI></ExerciseVideoAPI>
+
+      },
     ],
   },
 
