@@ -31,6 +31,10 @@ import Login from './LoginAll/Login';
 import SignUp from './LoginAll/SignUp';
 import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './Providers/PrivateRoute';
+import Root_Trainer from './Components/Trainer_Panel/Root_Trainer';
+import Exericse_Data_Customers from './Components/Trainer_Panel/ExericseData_GET_From_Customer/Exericse_Data_Customers';
+import TestAPI from './Components/Trainer_Panel/TextAPI';
+import Trainer_SingleUserGuideline from './Components/Trainer_Panel/SingleUserGuideline/Trainer_SingleUserGuideline';
 
 
 
@@ -151,6 +155,24 @@ const router = createBrowserRouter([
         element: <SingleUserGuideline></SingleUserGuideline>,
       },
     ],
+  },
+  {
+    path: "/Trainer",
+    element: <Root_Trainer></Root_Trainer>,
+    children: [
+      {
+        path: "/Trainer/ExerciseData",
+        element: <Exericse_Data_Customers></Exericse_Data_Customers>,
+      },
+      {
+        path: "/Trainer/SingleGuideLine",
+        element:<Trainer_SingleUserGuideline></Trainer_SingleUserGuideline>
+      },
+    ],
+  },
+  {
+    path: "testAPi",
+    element:<TestAPI></TestAPI>
   },
 ]);
 
