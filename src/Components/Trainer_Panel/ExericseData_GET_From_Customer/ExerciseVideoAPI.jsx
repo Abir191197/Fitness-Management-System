@@ -32,7 +32,7 @@ const ExerciseVideoAPI = () => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "85b980367cmsh47ffec9e5666b51p1394a3jsn3936b599c843",
+            "44d99be88amsh43c2d09f6974d09p14c933jsn048c32a4fd21",
           "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
         },
       });
@@ -48,7 +48,7 @@ const ExerciseVideoAPI = () => {
   };
 
   return (
-    <div className="ml-72">
+    <div className="ml-64 mt-16">
       <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
         <span>Select Body Part:</span>
         <Select
@@ -56,7 +56,7 @@ const ExerciseVideoAPI = () => {
           onChange={setSelectedOption}
           options={options}
         />
-        <button onClick={handleAPI}>Fetch Data</button>
+        <button className="btn bg-success" onClick={handleAPI}>Search</button>
       </div>
 
       {/* Display API results */}

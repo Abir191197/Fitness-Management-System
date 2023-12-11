@@ -37,6 +37,7 @@ import TestAPI from './Components/Trainer_Panel/TextAPI';
 import Trainer_SingleUserGuideline from './Components/Trainer_Panel/SingleUserGuideline/Trainer_SingleUserGuideline';
 import ExerciseListProvideTrainer from './Components/Customers/Inbox/ExerciseGuidellineTrainer/ExerciseListProvideTrainer';
 import ExerciseVideoAPI from './Components/Trainer_Panel/ExericseData_GET_From_Customer/ExerciseVideoAPI';
+import SingleExerciseDetails from './Components/Customers/ExerciseListVideo/SingleExerciseDetails';
 
 
 
@@ -128,6 +129,10 @@ const router = createBrowserRouter([
         element:<ExerciseVideoAPI></ExerciseVideoAPI>
 
       },
+      {
+        path: '/Classes/SingleExerciseDetails/:id',
+        element:<SingleExerciseDetails></SingleExerciseDetails>
+      }
     ],
   },
 
